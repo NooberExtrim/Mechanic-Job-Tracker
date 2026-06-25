@@ -44,7 +44,7 @@ function renderJobs() {
 
     jobs.forEach(job => {
         const div = document.createElement("div");
-        div.classList.add("job");
+        div.classList.add("job", job.status);
 
         div.innerHTML = `
             <h3>${job.name} - ${job.carModel}</h3>
