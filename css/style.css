@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #19162e;
+    padding: 20px;
+    color: #333;
+}
+
+body > * {
+    margin-bottom: 15px;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+    color: #969696;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #969696;
+}
+
+input, textarea {
+    width: 300px;
+    padding: 8px;
+    border: 2px solid #000000;
+    background-color: #383844;
+    color: #969696;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #232323;
+    color: #969696;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+hr {
+    border-color: #0c0b16;
+    background-color: #0c0b16;
+    border-style: solid;
+    border-width: 2px;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+
+.job {
+    background: #383844;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+}
