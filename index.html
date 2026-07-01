@@ -1,40 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Mechanic Job Tracker - Customer</title>
-        <link rel="stylesheet" href="css/style.css">
-        </style>
-    </head>
-    
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mechanic Job Tracker - Customer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <h1>Request a Mechanic Job</h1>
+<body>
 
-        <div>
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" placeholder="John Doe">
-        </div>
-        <div>
-            <label for="carModel">Car Model: </label>
-            <input type="text" id="carModel" name="carModel" placeholder="Volkswagen Beetle">
-        </div>
-        <div>
-            <label for="description">Description: </label>
-            <textarea id="description" name="description" placeholder="The brakes are squeaking" cols="30" rows="8"></textarea>
-        </div>
+<div class="container">
 
-        <button type="button" id="submitBtn">Submit</button>
+    <header class="page-header">
+        <h1>Request a Mechanic Job</h1>
+    </header>
 
-        <hr>
+    <main class="main-layout">
 
-        <h2>Current Jobs:</h2>
+        <section class="form-section">
 
-        <div id="jobList">
-            <!-- Jobs will appear here later -->
-        </div>
-        
-        <script src="js/customer.js"></script>
-    </body>
+            <form id="jobForm">
 
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="carModel">Car Model</label>
+                    <input type="text" id="carModel" placeholder="Volkswagen Beetle">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" placeholder="The brakes are squeaking"></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn">Submit</button>
+
+            </form>
+
+        </section>
+
+        <section class="jobs-section">
+
+            <h2>Current Jobs</h2>
+
+            <div id="jobList"></div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/customer.js"></script>
+
+</body>
 </html>

@@ -10,7 +10,8 @@ let jobs = [];
 
 
 // On-click button
-submitBtn.addEventListener("click", function () {
+document.getElementById("jobForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
     const name = document.getElementById("name").value;
     const carModel = document.getElementById("carModel").value;
@@ -34,9 +35,7 @@ submitBtn.addEventListener("click", function () {
     renderJobs();
 
     // Clear document
-    document.getElementById("name").value = "";
-    document.getElementById("carModel").value = "";
-    document.getElementById("description").value = "";
+    document.getElementById("jobForm").reset();
 });
 
 function renderJobs() {
