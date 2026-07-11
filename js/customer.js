@@ -1,4 +1,4 @@
-const submitBtn = document.getElementById("submitBtn");
+const jobFrom = document.getElementById("jobForm")
 const jobList = document.getElementById("jobList");
 
 if (!submitBtn || !jobList) {
@@ -10,7 +10,7 @@ let jobs = [];
 
 
 // On-click button
-document.getElementById("jobForm").addEventListener("submit", function(event) {
+jobFrom.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const name = document.getElementById("name").value;
@@ -35,7 +35,7 @@ document.getElementById("jobForm").addEventListener("submit", function(event) {
     renderJobs();
 
     // Clear document
-    document.getElementById("jobForm").reset();
+    jobForm.reset();
 });
 
 function renderJobs() {
