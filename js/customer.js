@@ -1,7 +1,7 @@
-const jobFrom = document.getElementById("jobForm")
+const jobFrom = document.getElementById("jobForm");
 const jobList = document.getElementById("jobList");
 
-if (!submitBtn || !jobList) {
+if (!jobFrom || !jobList) {
     console.error("HTML elements not found.");
 }
 
