@@ -27,7 +27,7 @@ jobFrom.addEventListener("submit", function(event) {
         name: name,
         carModel: carModel,
         description: description,
-        status: "waiting"
+        status: "Pending"
     };
 
     jobs.push(job);
