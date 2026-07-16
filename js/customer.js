@@ -1,16 +1,16 @@
-const jobFrom = document.getElementById("jobForm");
+const jobForm = document.getElementById("jobForm");
 const jobList = document.getElementById("jobList");
 
-if (!jobFrom || !jobList) {
+if (!jobForm || !jobList) {
     console.error("HTML elements not found.");
 }
 
-// in-memory sotrage of jobs
-let jobs = [];
+let jobs = loadJobs();
 
+renderJobs();
 
 // On-click button
-jobFrom.addEventListener("submit", function(event) {
+jobForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const name = document.getElementById("name").value;
@@ -27,10 +27,11 @@ jobFrom.addEventListener("submit", function(event) {
         name: name,
         carModel: carModel,
         description: description,
-        status: "Pending"
+        status: "pending"
     };
 
     jobs.push(job);
+    saveJobs(jobs);
 
     renderJobs();
 

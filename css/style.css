@@ -127,7 +127,7 @@ button:hover {
     font-size: 12px;
 }
 
-.job.waiting small {
+.job.pending small {
     background-color: #3a2f00;
     color: #ffcc00;
 }
