@@ -2,7 +2,7 @@ const jobForm = document.getElementById("jobForm");
 const jobList = document.getElementById("jobList");
 
 if (!jobForm || !jobList) {
-    console.error("HTML elements not found.");
+    throw new Error("Required HTML elements missing");
 }
 
 let jobs = loadJobs();
