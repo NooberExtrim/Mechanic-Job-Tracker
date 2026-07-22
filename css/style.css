@@ -22,12 +22,14 @@ body {
     align-items: flex-start;
 }
 
-h1, h2 {
+h1,
+h2 {
     margin-bottom: 15px;
     color: #d6d6d6;
 }
 
-p, small {
+p,
+small {
     color: #b0b0b0;
 }
 
@@ -59,7 +61,8 @@ label {
     display: block;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #3d3a55;
@@ -77,7 +80,8 @@ textarea {
     resize: vertical;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: #6a5acd;
 }
 
@@ -97,7 +101,24 @@ button:hover {
     transform: translateY(-1px);
 }
 
+button.accept-btn {
+    background-color: #04aa81;
+}
+
+button.accept-btn:hover {
+    background-color: #04caa1;
+}
+
+button.complete-btn {
+    background-color: #047a00;
+}
+
+button.complete-btn:hover {
+    background-color: #048a00;
+}
+
 .job {
+    flex-direction: column;
     background-color: #2a2740;
     padding: 14px;
     border-radius: 8px;
@@ -137,18 +158,18 @@ button:hover {
     color: #4db8ff;
 }
 
-.job.done small {
+.job.completed small {
     background-color: #0b2f1a;
     color: #4dff88;
 }
 
 
 /* for mobile flexability */
+
 @media (max-width: 768px) {
     .main-layout {
         flex-direction: column;
     }
-
     .form-section {
         max-width: 100%;
     }
