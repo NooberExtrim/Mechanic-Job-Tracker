@@ -51,6 +51,14 @@ function renderJobs() {
             });
 
             div.appendChild(completeButton);
+        } else if (job.status === "completed") {
+            const deleteButton = makeButton("Delete Job", "delete-btn", function() {
+                jobs = jobs.filter(j => j.id !== job.id);
+                saveJobs(jobs);
+                renderJobs();
+            });
+
+            div.appendChild(deleteButton);
         }
 
         jobList.appendChild(div);

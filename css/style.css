@@ -101,39 +101,51 @@ button:hover {
     transform: translateY(-1px);
 }
 
-button.accept-btn {
+.accept-btn {
     background-color: #04aa81;
 }
 
-button.accept-btn:hover {
+.accept-btn:hover {
     background-color: #04caa1;
 }
 
-button.complete-btn {
+.complete-btn {
     background-color: #047a00;
 }
 
-button.complete-btn:hover {
+.complete-btn:hover {
     background-color: #048a00;
 }
 
+.delete-btn {
+    background-color: #aa0404;
+}
+
+.delete-btn:hover {
+    background-color: #cc0404;
+}
+
 .job {
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
     background-color: #2a2740;
     padding: 14px;
     border-radius: 8px;
-    margin-bottom: 12px;
+    /*margin-bottom: 12px;*/
     border: 1px solid #3d3a55;
 }
 
 .job h3 {
-    margin-bottom: 6px;
+    /*margin-bottom: 6px;*/
     font-size: 18px;
     color: #e6e6e6;
 }
 
 .job p {
-    margin-bottom: 2px;
+    /*margin-bottom: 2px;*/
     font-size: 16px;
     white-space: normal;
     overflow-wrap: break-word;
@@ -141,9 +153,8 @@ button.complete-btn:hover {
 }
 
 .job small {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 4px 8px;
+    /*margin-top: 8px;
+    padding: 4px 8px;*/
     border-radius: 999px;
     font-size: 12px;
 }
